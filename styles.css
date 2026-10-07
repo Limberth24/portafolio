@@ -60,3 +60,15 @@ body {
 .nav a:hover {
     color: #61a6f5;
 }
+
+@media (max-width: 600px) {
+    .nav ul {
+        gap: 14px 18px;         
+        justify-content: space-evenly; 
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+}
