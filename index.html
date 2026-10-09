@@ -24,6 +24,10 @@
         </ul>
     </nav>
 
+    <div>
+        <button id="btn-tema">Cambiar Tema</button>
+    </div>
+
     <main>
 
         <section>
@@ -41,26 +45,11 @@
             <h2>Mi proceso de trabajo</h2>
             <p>Así desarrollo cada proyecto, paso a paso:</p>
             <ol>
-                <li>
-                    <h3>Ideas</h3>
-                    <p>Entender el problema, los objetivos y el alcance del proyecto.</p>
-                </li>
-                <li>
-                    <h3>Planificar</h3>
-                    <p>Definir la arquitectura, el stack tecnológico y las fases del desarrollo.</p>
-                </li>
-                <li>
-                    <h3>Desarrollo</h3>
-                    <p>Construir la solución, escribiendo código limpio y mantenible.</p>
-                </li>
-                <li>
-                    <h3>Test</h3>
-                    <p>Realizar pruebas para garantizar calidad, rendimiento y resolver bugs.</p>
-                </li>
-                <li>
-                    <h3>Subirlo a internet</h3>
-                    <p>Desplegar la aplicación en un servidor y verificar su correcto funcionamiento.</p>
-                </li>
+                <li><h3>Ideas</h3><p>Entender el problema, los objetivos y el alcance del proyecto.</p></li>
+                <li><h3>Planificar</h3><p>Definir la arquitectura, el stack tecnológico y las fases del desarrollo.</p></li>
+                <li><h3>Desarrollo</h3><p>Construir la solución, escribiendo código limpio y mantenible.</p></li>
+                <li><h3>Test</h3><p>Realizar pruebas para garantizar calidad, rendimiento y resolver bugs.</p></li>
+                <li><h3>Subirlo a internet</h3><p>Desplegar la aplicación en un servidor y verificar su correcto funcionamiento.</p></li>
             </ol>
         </section>
 
@@ -80,18 +69,9 @@
             <h2>Proyectos</h2>
             <p>Algunos de los trabajos que he realizado:</p>
             <ul>
-                <li>
-                    <h3>Por definir</h3>
-                    <p>Por definir</p>
-                </li>
-                <li>
-                    <h3>Por definir</h3>
-                    <p>Por definir</p>
-                </li>
-                <li>
-                    <h3>Por definir</h3>
-                    <p>Por definir</p>
-                </li>
+                <li><h3>Por definir</h3><p>Por definir</p></li>
+                <li><h3>Por definir</h3><p>Por definir</p></li>
+                <li><h3>Por definir</h3><p>Por definir</p></li>
             </ul>
         </section>
 
@@ -109,6 +89,19 @@
     <footer>
         <p>Derechos Reservados 2026 - Limberth Mamani Tola</p>
     </footer>
+
+    <script>
+
+        let boton = document.getElementById("btn-tema");
+
+        function cambiarTema(boton) {
+            document.body.classList.toggle("oscuro");
+        }
+        boton.addEventListener("click", function() {
+            cambiarTema(boton);
+        });
+
+    </script>
 
 </body>
 </html>

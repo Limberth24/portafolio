@@ -61,6 +61,11 @@ body {
     color: #61a6f5;
 }
 
+.oscuro {
+    background: #121212;
+    color: #ffffff;
+}
+
 @media (max-width: 600px) {
     .nav ul {
         gap: 14px 18px;         
