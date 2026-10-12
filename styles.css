@@ -8,7 +8,37 @@ body {
     background: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     color: #1a1a1a;
-    line-height: 1.6;
+    line-height: 1.5;
+}
+
+main section {
+    padding: 20px;
+    margin: 16px;
+    border-radius: 8px;
+    background: #f4f7fb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
 }
 
 .marca {
@@ -61,19 +91,62 @@ body {
     color: #61a6f5;
 }
 
-.oscuro {
+#btn-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-tema {
+    display: block;
+    margin: 12px auto;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #61a6f5;
+    color: #fff;
+    cursor: pointer;
+}
+
+body.oscuro {
     background: #121212;
     color: #ffffff;
 }
 
+body.oscuro main section,
+body.oscuro .nav,
+body.oscuro form {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+body.oscuro .nav a,
+body.oscuro .marca p {
+    color: #ffffff;
+}
+
+body.oscuro .marca {
+    background: #0d2233;
+}
+
 @media (max-width: 600px) {
-    .nav ul {
-        gap: 14px 18px;         
-        justify-content: space-evenly; 
-        flex-wrap: wrap;
+    #btn-menu {
+        display: block;
     }
 
-    .nav a {
-        font-size: 13px;
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul.abierto {
+        display: flex;
+    }
+
+    main section {
+        margin: 8px 0;
     }
 }
