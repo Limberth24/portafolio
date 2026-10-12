@@ -14,6 +14,7 @@
     </header>
 
     <nav class="nav">
+        <button id="btn-menu">☰</button>
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre Mí</a></li>
@@ -25,7 +26,7 @@
     </nav>
 
     <div>
-        <button id="btn-tema">Cambiar Tema</button>
+        <button id="btn-tema">Modo noche</button>
     </div>
 
     <main>
@@ -77,31 +78,26 @@
 
         <section>
             <h2>Contacto</h2>
-            <p>Puedes escribirme o visitar mis perfiles:</p>
-            <ul>
-                <li>Correo: <a href="#">limberthtola20@gmail.com</a></li>
-                <li>GitHub: <a href="#" target="_blank">github</a></li>
-            </ul>
+            <p>Escríbeme por aquí:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" required>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
 
     <footer>
         <p>Derechos Reservados 2026 - Limberth Mamani Tola</p>
+        <p>Correo: limberthtola20@gmail.com | GitHub: <a href="#" target="_blank">github</a></p>
     </footer>
 
-    <script>
-
-        let boton = document.getElementById("btn-tema");
-
-        function cambiarTema(boton) {
-            document.body.classList.toggle("oscuro");
-        }
-        boton.addEventListener("click", function() {
-            cambiarTema(boton);
-        });
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
