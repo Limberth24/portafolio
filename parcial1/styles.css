@@ -121,3 +121,14 @@ footer {
   border-radius: 10px;
   font-size: 0.9rem;
 }
+
+@media (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    padding: 8px 0;
+  }
+}
