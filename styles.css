@@ -131,6 +131,21 @@ body.oscuro .marca {
     background: #0d2233;
 }
 
+.aviso{
+    display: none;
+    margin-top: 14px;
+}
+
+.aviso.error{
+    display: block;
+    color: #b3261e;
+}
+
+.aviso.exito{
+    display: block;
+    color: #1a7f4f;
+}
+
 @media (max-width: 600px) {
     #btn-menu {
         display: block;
