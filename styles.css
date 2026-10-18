@@ -131,19 +131,25 @@ body.oscuro .marca {
     background: #0d2233;
 }
 
-.aviso{
+.aviso {
     display: none;
     margin-top: 14px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.aviso.error{
+.aviso.error {
     display: block;
     color: #b3261e;
+    background: #fdecea;
 }
 
-.aviso.exito{
+.aviso.exito {
     display: block;
     color: #1a7f4f;
+    background: #e6f4ea;
 }
 
 @media (max-width: 600px) {
