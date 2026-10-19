@@ -42,6 +42,7 @@ function revisarContacto(event){
     avisoContacto.textContent = "Se recibio tu mensaje. Te contactamos hoy.";
     avisoContacto.classList.add("exito");
     avisoContacto.classList.remove("error");
+    formularioContacto.reset();
   }
 }
 
