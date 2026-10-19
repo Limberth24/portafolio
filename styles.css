@@ -7,7 +7,7 @@
 body {
     background: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    color: #1a1a1a;
+    color: #14213d;
     line-height: 1.5;
 }
 
@@ -15,7 +15,7 @@ main section {
     padding: 20px;
     margin: 16px;
     border-radius: 8px;
-    background: #f4f7fb;
+    background: #e5e5e5;
 }
 
 form {
@@ -26,38 +26,62 @@ form {
     padding: 16px;
     margin-top: 12px;
     border-radius: 8px;
-    background: #fff;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
 }
 
 form input,
 form textarea {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #e5e5e5;
     border-radius: 4px;
+    background: #ffffff;
+    color: #14213d;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #fca311;
+    border-color: #fca311;
+}
+
+form button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fca311;
+    color: #14213d;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background: #e08e00;
 }
 
 footer {
     text-align: center;
     padding: 16px;
+    color: #14213d;
 }
 
 .marca {
-    background: #61a6f5;
+    background: #14213d;
     padding: 60px 20px 30px;
     text-align: center;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .marca h1 {
     font-size: 36px;
     font-weight: 700;
-    color: #fcfcfc;
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
 .marca p {
     font-size: 16px;
-    color: #666;
+    color: #e5e5e5;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -66,7 +90,7 @@ footer {
     position: sticky;
     top: 0;
     background: #ffffff;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #e5e5e5;
     padding: 14px 20px;
     z-index: 100;
 }
@@ -81,14 +105,14 @@ footer {
 
 .nav a {
     text-decoration: none;
-    color: #333;
+    color: #14213d;
     font-size: 14px;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .nav a:hover {
-    color: #61a6f5;
+    color: #fca311;
 }
 
 #btn-menu {
@@ -97,6 +121,7 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
+    color: #14213d;
 }
 
 #btn-tema {
@@ -105,30 +130,44 @@ footer {
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
-    background: #61a6f5;
-    color: #fff;
+    background: #fca311;
+    color: #14213d;
+    font-weight: 700;
     cursor: pointer;
 }
 
 body.oscuro {
-    background: #121212;
-    color: #ffffff;
+    background: #0a0a0a;
+    color: #e5e5e5;
 }
 
 body.oscuro main section,
 body.oscuro .nav,
 body.oscuro form {
-    background: #1e1e1e;
-    color: #ffffff;
+    background: #14213d;
+    color: #e5e5e5;
+    border-color: #1f2f52;
+}
+
+body.oscuro form input,
+body.oscuro form textarea {
+    background: #0a0a0a;
+    color: #e5e5e5;
+    border-color: #1f2f52;
 }
 
 body.oscuro .nav a,
-body.oscuro .marca p {
-    color: #ffffff;
+body.oscuro .marca p,
+body.oscuro footer {
+    color: #e5e5e5;
+}
+
+body.oscuro #btn-menu {
+    color: #e5e5e5;
 }
 
 body.oscuro .marca {
-    background: #0d2233;
+    background: #14213d;
 }
 
 .aviso {
