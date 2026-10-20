@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Limberth Mamani Tola | Ingeniero de Sistemas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="marca" id="inicio">
+        <h1>Limberth Mamani Tola — Ingeniero de Sistemas</h1>
+        <p>Desarrollo de software, análisis y soluciones tecnológicas</p>
+    </header>
+
+    <nav class="nav">
+        <button id="btn-menu">☰</button>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="btn-tema">Modo noche</button>
+    </nav>
+
+    <main>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Limberth Mamani Tola, Ingeniero de Sistemas. Me apasiona analizar problemas, estructurar soluciones y ejecutarlas con criterio. Este es mi portafolio personal, donde iré mostrando los proyectos que construyo y los servicios que ofrezco.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrezco soluciones tecnológicas adaptadas a las necesidades de cada cliente:</p>
+            <ul>
+                <li>Análisis y estructuración de sistemas.</li>
+                <li>Desarrollo de aplicaciones web y de escritorio.</li>
+                <li>Integración de sistemas y APIs.</li>
+                <li>Consultoría en ingeniería de sistemas.</li>
+                <li>Optimización de procesos y bases de datos.</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Algunos de los trabajos que he realizado:</p>
+            <ul>
+                <li>
+                    <h3><a href="https://github.com/Limberth24/Fauna" target="_blank">Fauna</a></h3>
+                    <p>Sitio web sobre la fauna nacional de Bolivia. Proyecto desarrollado con HTML y CSS, enfocado en presentar información de manera clara y accesible.</p>
+                </li>
+                <li>
+                    <h3><a href="https://github.com/Limberth24/appmejordia" target="_blank">AppMejorDía</a></h3>
+                    <p>Aplicación móvil desarrollada en Flutter (Dart) para mejorar el rendimiento personal. Incluye seguimiento de hábitos y organización diaria.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Escríbeme por aquí:</p>
+            <form id="form-contacto" method="POST" action="procesar.php" novalidate>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Pedro Alcocer Marin" required>
+                <label for="correo">Correo electronico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ej. tucorreo@gmail.com" required>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" rows="4" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+                <p id="aviso-contacto" class="aviso"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-marca">Limberth Mamani Tola | Ingeniero de Sistemas</p>
+        <p>© 2026 — Todos los derechos reservados</p>
+        <p><a href="mailto:limberthtola20@gmail.com">limberthtola20@gmail.com</a> · <a href="https://github.com/Limberth24" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
