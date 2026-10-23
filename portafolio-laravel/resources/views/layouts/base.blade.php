@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Limberth Mamani Tola | Ingeniero de Sistemas</title>
+</head>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; } body { background:#fff; font-family:Arial, Helvetica, sans-serif; color:#14213d; line-height:1.5; } .marca { background:#14213d; padding:40px 20px 26px; text-align:center; } .marca h1 { font-size:30px; font-weight:700; color:#fff; margin-bottom:6px; line-height:1.2; } .marca p { font-size:15px; color:#e5e5e5; max-width:600px; margin:0 auto; }
+.nav { display:flex; align-items:center; justify-content:space-between; background:#fff; border-bottom:1px solid #e5e5e5; padding:10px 20px; z-index:100; } #btn-menu { display:none; font-size:22px; background:none; border:none; cursor:pointer; color:#14213d; } .nav ul { list-style:none; display:flex; justify-content:center; gap:24px; flex-wrap:wrap; margin:0; flex:1; } .nav a { position:relative; text-decoration:none; color:#14213d; font-size:14px; font-weight:500; } .nav a::after { content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:#fca311; transition:width .2s ease; } .nav a:hover::after { width:100%; } #btn-tema { margin:0; padding:7px 14px; border:none; border-radius:5px; background:#fca311; color:#14213d; font-weight:700; font-size:13px; cursor:pointer; white-space:nowrap; }
+main section { padding:16px; margin:12px 16px; border-radius:8px; background:#e5e5e5; } form { display:flex; flex-direction:column; gap:8px; max-width:400px; padding:14px; margin:10px auto 0; border-radius:8px; background:#fff; border:1px solid #e5e5e5; text-align:left; } form input, form textarea { padding:7px; border:1px solid #e5e5e5; border-radius:4px; color:#14213d; } form input:focus, form textarea:focus { outline:2px solid #fca311; border-color:#fca311; } form button[type="submit"] { padding:9px; border:none; border-radius:5px; background:#fca311; color:#14213d; font-weight:700; cursor:pointer; } form button[type="submit"]:hover { background:#e08e00; } #contacto { text-align:center; } .aviso { display:none; margin-top:12px; padding:9px 11px; border-radius:6px; font-weight:600; font-size:14px; } .aviso.error { display:block; color:#b3261e; background:#fdecea; } .aviso.exito { display:block; color:#1a7f4f; background:#e6f4ea; }
+footer { text-align:center; padding:14px 20px; color:#14213d; border-top:1px solid #e5e5e5; font-size:13px; } footer p { margin:2px 0; } footer a { color:inherit; text-decoration:none; font-weight:600; } footer a:hover { text-decoration:underline; } body.oscuro { background:#0a0a0a; color:#e5e5e5; } body.oscuro main section, body.oscuro .nav, body.oscuro form { background:#14213d; color:#e5e5e5; } body.oscuro form input, body.oscuro form textarea { background:#0a0a0a; color:#e5e5e5; } body.oscuro .nav a, body.oscuro footer { color:#e5e5e5; } body.oscuro #btn-menu { color:#e5e5e5; }
+@media (max-width:600px) { .nav { flex-wrap:wrap; gap:10px; } #btn-menu { display:block; } .nav ul { display:none; flex-direction:column; align-items:center; width:100%; gap:10px; padding-top:10px; flex:none; } .nav ul.abierto { display:flex; } #btn-tema { margin-left:auto; } main section { margin:8px 0; } .marca { padding:30px 16px 22px; } .marca h1 { font-size:24px; } .marca p { font-size:14px; } }
+</style>
+<body>
+
+    <header class="marca" id="inicio">
+        <h1>Limberth Mamani Tola — Ingeniero de Sistemas</h1>
+        <p>Desarrollo de software, análisis y soluciones tecnológicas</p>
+    </header>
+
+    <nav class="nav">
+        <button id="btn-menu">☰</button>
+        <ul>
+            <li><a href="/inicio">Inicio</a></li>
+            <li><a href="/sobre-mi">Sobre Mí</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/proyectos">Proyectos</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+        <button id="btn-tema">Modo noche</button>
+    </nav>
+
+    <main>
+        @yield('contenido')
+
+    </main>
+
+    <footer>
+        <p class="footer-marca">Limberth Mamani Tola | Ingeniero de Sistemas</p>
+        <p>© 2026 — Todos los derechos reservados</p>
+        <p><a href="mailto:limberthtola20@gmail.com">limberthtola20@gmail.com</a> · <a href="https://github.com/Limberth24" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
