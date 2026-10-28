@@ -30,3 +30,7 @@ Route::get('/contacto', function () {
 Route::get('/juguetes', function () {
     return view('juguetes.lista');
 });
+
+Route::get('/juguetes/nuevo', function () {
+    return view('juguetes.formulario');
+});
