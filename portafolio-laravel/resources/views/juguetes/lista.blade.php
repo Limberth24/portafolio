@@ -1,8 +1,6 @@
 @extends('layouts.integradora')
 
 @section('contenido')
-    <h1>Jugueteria El Trompo</h1>
-    <p>Los mejores juguetes del barrio ahora con inventario digital</p>
 
     <p>Hay {{ count($juguetes) }} juguetes en el estante</p>
 
