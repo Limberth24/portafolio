@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Juguete;
 
 Route::get('/', function () {
     return view('inicio');
@@ -24,4 +25,8 @@ Route::get('/proyectos', function () {
 
 Route::get('/contacto', function () {
     return view('contacto');
+});
+
+Route::get('/juguetes', function () {
+    return view('juguetes.lista');
 });
