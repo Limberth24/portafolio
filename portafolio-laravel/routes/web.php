@@ -97,15 +97,18 @@ Route::post('/juguetes/nuevo', function () {
     request()->validate([
         'nombre' => 'required',
         'precio' => 'required|integer',
+        'stock'  => 'required|integer|min:0', 
     ], [
         'nombre.required' => 'Pone el nombre del juguete.',
         'precio.required' => 'Pone el precio del juguete.',
         'precio.integer'  => 'Aca el precio va entero, sin decimales ni letras.',
+        'stock.required'  => 'Debes poner cuantas unidades hay en el estante.',
     ]);
 
     Juguete::create([
         'nombre' => request()->input('nombre'),
         'precio' => request()->input('precio'),
+        'stock'  => request()->input('stock'),
     ]);
 
     return redirect('/juguetes');
