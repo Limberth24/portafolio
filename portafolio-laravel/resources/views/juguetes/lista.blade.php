@@ -6,7 +6,7 @@
 
     <ul>
         @foreach ($juguetes as $juguete)
-            <li>{{ $juguete->nombre }} — Bs {{ $juguete->precio }}</li>
+            <li>{{ $juguete->nombre }} — Bs {{ $juguete->precio }} — Stock: {{ $juguete->stock }}</li>
         @endforeach
     </ul>
 
